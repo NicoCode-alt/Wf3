@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mon CV-Pass</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="styleform.css">
+</head>
+
+<body>
+    <div class="LecteurAudio">
+        <audio src="./Audio/music.mp3" controls autoplay></audio>
+    </div>
+    <div class="Passport">
+        <div class="carte">
+            <div class="photo">
+                <img src="./Imgs/portrait.jpg" alt="Ma photo">
+            </div>
+            <div class="coordonees">
+                <h2>Nicolas Courtonne</h2> <br>
+                <h1>Développeur Web & Web mobile</h1>
+            </div>
+        </div>
+        <nav class="CadreBoutons">
+            <ul class="boutons">
+                <li class="bouton"><a href="./index3.html">Accueil</a></li>
+                <li class="bouton"><a href="./Comp.html">Compétences</a></li>
+                <li class="bouton"><a href="./Exps.html">Expériences</a></li>
+                <li class="bouton"><a href="./Lang.html">Intérêts</a></li>
+                <li class="bouton"><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="PageText">
+            <div class="AnimContact">
+                <div class="tableau">
+                    <table class="tabtable">
+                        <thead>
+                            <tr class="tableizer-firstrow">
+                                <th></th>
+                                <th>Lundi</th>
+                                <th>Mardi</th>
+                                <th>Mercredi</th>
+                                <th>Jeudi</th>
+                                <th>Vendredi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9h00</td>
+                                <td class="Absent" rowspan="2">&nbsp;</td>
+                                <td class="Present" rowspan="2">&nbsp;</td>
+                                <td class="Present" rowspan="2">&nbsp;</td>
+                                <td class="Present" rowspan="2">&nbsp;</td>
+                                <td class="Present" rowspan="2">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>12h00</td>
+                            </tr>
+                            <tr>
+                                <td class="Absent" colspan="6">&nbsp;</td>
+
+                            </tr>
+                            <tr>
+                                <td>14h00</td>
+                                <td class="Present" rowspan="2">&nbsp;</td>
+                                <td class="Present" rowspan="2">&nbsp;</td>
+                                <td class="Present" rowspan="2">&nbsp;</td>
+                                <td class="Present" rowspan="2">&nbsp;</td>
+                                <td class="Absent" rowspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td>17h00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="form">
+                    <form method="POST" action="./traitement.js">
+                        <p class="formulaire">
+                        <fieldset>
+                            <h1 class="titreForm">Envoyer un message</h1>
+                            <div class="separation"></div>
+                            <div class="primaire">
+                                <div class="colonne">
+                                    <label for="nom">Nom</label>
+                                    <input type="text" name="nom" id="nom" placeholder="Dupond">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email" placeholder="A.dupond@protonmail.com">
+                                    <label for="adresse">Adresse</label>
+                                    <input type="text" name="adresse" id="adresse" placeholder="1 rue Michel">
+                                </div>
+                                <div class="colonne">
+                                    <label for="prenomm">Prénom</label>
+                                    <input type="text" name="prenom" id="prenom" placeholder="Albert">
+                                    <label for="telephone">Téléphone</label>
+                                    <input type="TEXT" name="telephone" id="telephone" placeholder="06 19 23 01 25">
+                                    <label for="ville">Ville</label>
+                                    <input type="TEXT" name="ville" id="ville" placeholder="Paris">
+                                </div>
+                                <div class="colonne">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" cols="30" rows="5"
+                                        placeholder="Ecrivez ici votre message"></textarea>
+                                </div>
+                            </div>
+                            <div class="secondaire">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <label for="newsletter">Je souhaite recevoir la newsletter</label>
+                                <input type="checkbox" name="partenaire" id="partenaire">
+                                <label for="partenaire">Je souhaite recevoir la newsletter des partenaires</label>
+                                <input type="submit" value="Envoyer les modifications">
+                            </div>
+                        </fieldset>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <footer>
+        <h6>
+            Copyright 2021 - Nicolas Courtonne
+        </h6>
+    </footer>
+</body>
